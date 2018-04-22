@@ -1,0 +1,70 @@
+{
+  "name": "nodejs-fx",
+  "version": "1.0.0",
+  "description": "Small functional utility library for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:all": "npm run lint && jest --coverage",
+    "lint": "eslint ./src",
+    "sonar": "node ./scripts/linters/sonar",
+    "coveralls": "cat reports/coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "keywords": [
+    "functional",
+    "functional-programming",
+    "declarative-programming",
+    "fp",
+    "utility"
+  ],
+  "private": false,
+  "author": {
+    "name": "Vitor Hugo Salgado",
+    "email": "vsalgadopb@gmail.com",
+    "url": "https://github.com/vitorsalgado"
+  },
+  "license": "MIT License",
+  "repository": "git+https://github.com/vitorsalgado/nodejs-fx.git",
+  "bugs": {
+    "url": "https://github.com/vitorsalgado/nodejs-fx/issues"
+  },
+  "homepage": "https://github.com/vitorsalgado/nodejs-fx#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-nodesecurity": "^1.3.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.4.3",
+    "sonarjs": "^1.0.0"
+  },
+  "optionalDependencies": {
+    "coveralls": "^3.0.0"
+  },
+  "jest": {
+    "notify": false,
+    "verbose": true,
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": 100
+    },
+    "coverageDirectory": "reports/coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testMatch": [
+      "**/?(*.)(spec|test).js?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "__tests__/(fixtures|__mocks__)/",
+      "/_(temp|mock|install|init|helpers|utils).js$"
+    ]
+  }
+}

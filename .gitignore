@@ -1,3 +1,14 @@
+*.iws
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
 # Logs
 logs
 *.log
@@ -57,3 +68,15 @@ typings/
 # dotenv environment variables file
 .env
 
+# Reports
+reports/
+
+# IDEs
+.vscode
+.idea
+/log
+
+jest_*
+*.tar
+*.tar.gz
+.sonarlint
