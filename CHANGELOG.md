@@ -7,4 +7,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [1.0.0] - 2018-04-22
 ### Added
-- Added items
+- First library version. Functions contained:
+  - allOf
+  - anyOf
+  - check
+  - compose
+  - curry
+  - def
+  - flatten
+  - maybe
+  - not
+  - peek
+  - pipe
+  - valueOr
