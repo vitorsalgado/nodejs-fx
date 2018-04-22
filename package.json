@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:all": "npm run lint && jest --coverage",
+    "test:coverage": "jest --coverage",
     "lint": "eslint ./src",
     "sonar": "node ./scripts/linters/sonar",
     "coveralls": "cat reports/coverage/lcov.info | ./node_modules/.bin/coveralls"
