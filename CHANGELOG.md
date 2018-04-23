@@ -20,3 +20,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
   - peek
   - pipe
   - valueOr
+
+## [1.0.1] - 2018-04-22
+### Changed
+- Better documentations;
+- Refactored some function parameters
