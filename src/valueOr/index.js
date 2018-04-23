@@ -1,8 +1,13 @@
 'use strict'
 
 /**
+ * Check if source is valid and if not, returns provided fallback
+ * @param source
+ * @param fallback - fallback if source is invalid
+ * @example
  *
- * @param value
- * @param def
+ * valueOr('test', 'fallback') // test
+ * valueOr(null, 'fallback') // fallback
+ *
  */
-module.exports = (value, def) => value || def
+module.exports = (source, fallback) => source || fallback

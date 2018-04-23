@@ -6,11 +6,12 @@
  * The remaining ones must accept only one.
  *
  * @param {...Function} fns - the functions to be composed
- * @return {Function}
- *
+ * @return {function}
  * @example
+ *
  *  const x = pipe(sum, addTwo, addFive)(4, 2)
- *  expect(x).toEqual(13)
+ *  // 13
+ *
  */
 module.exports = (...fns) =>
   fns.reduce((f, g) => (...args) => g(f(...args)))

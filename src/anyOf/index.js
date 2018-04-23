@@ -2,7 +2,8 @@
 
 /**
  * Check if any predicate function matches with provided contexts
- * @param {...Function} fns - predicate functions to check if any evaluates to true
+ * @param {...function: boolean} fns - predicate functions to check if any evaluates to true
+ * @returns {function(...[*]): boolean}
  * @example
  *
  *  const is401 = err => err.status === 401

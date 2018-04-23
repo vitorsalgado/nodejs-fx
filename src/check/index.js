@@ -12,8 +12,8 @@ const check = x =>
      * Predicate to apply on source.
      * If it passes the predicate, fn will be called with source as argument
      *
-     * @param {Function} pred - predicate to apply on source
-     * @param {Function} fn - function that will be returned if pred passes
+     * @param {function: boolean} pred - predicate to apply on source
+     * @param {function} fn - function that will be returned if predicate passes
      */
     on: (pred, fn) => (pred(x) ? checked(fn(x)) : check(x)),
 
@@ -25,7 +25,7 @@ const check = x =>
     /**
      * Map the source value with the provided function
      *
-     * @param {Function} fn - function to map the source
+     * @param {function} fn - function to map the source
      */
     map: fn => check(fn(x)),
 

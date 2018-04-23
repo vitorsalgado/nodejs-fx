@@ -6,7 +6,7 @@
  * Runs the provided function on source and then return the source
  * Useful to log or debug operations
  *
- * @param {Function} fn
+ * @param {function} fn
  * @example
  *
  * arr

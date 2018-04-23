@@ -17,7 +17,7 @@ const maybe = x =>
     isPresent: () => !!x,
 
     /**
-     * @param {Function} fn - function to apply on source
+     * @param {function} fn - function to apply on source
      */
     map: fn => maybe(fn(x)),
 
