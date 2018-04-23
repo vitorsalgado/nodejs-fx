@@ -5,7 +5,7 @@
  * The leftmost function may accept multiple arguments.
  * The remaining ones must accept only one.
  *
- * @param {...Function} fns - the functions to be composed
+ * @param {...function} fns - the functions to be composed
  * @return {function}
  * @example
  *
