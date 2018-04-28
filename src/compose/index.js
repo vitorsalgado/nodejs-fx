@@ -14,5 +14,4 @@
  *  // 13
  *
  */
-module.exports = (...fns) =>
-  fns.reduceRight((f, g) => (...args) => g(f(...args)))
+module.exports = (...fns) => fns.reduceRight((f, g) => (...args) => g(f(...args)))

@@ -79,4 +79,5 @@ reports/
 jest_*
 *.tar
 *.tar.gz
-.sonarlint
+.sonarlint/
+temp/

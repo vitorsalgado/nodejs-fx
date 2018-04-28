@@ -2,6 +2,10 @@ language: node_js
 
 sudo: false
 
+node_js:
+  - '6'
+  - 'node'
+
 script:
   - npm run lint
   - npm run test:coverage
@@ -15,4 +19,6 @@ deploy:
   email: ${NPM_EMAIL}
   api_key: ${NPM_AUTH_TOKEN}
   on:
+    node: node
+    branch: master
     tags: true

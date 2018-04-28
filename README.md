@@ -34,7 +34,7 @@ or using destructuring
 const { pipe, curry } = require('nodejs-fx')
 
 const sum = (x, y) => x + y
-const addTwo curry(sum)(2)
+const addTwo = curry(sum)(2)
 const addFive = curry(sum)(5)
 
 const x = pipe(sum, addTwo, addFive)(4, 2)
@@ -47,6 +47,7 @@ const x = pipe(sum, addTwo, addFive)(4, 2)
 - [compose](src/compose/index.js)
 - [curry](src/curry/index.js)
 - [def](src/def/index.js)
+- [flatMap](src/flatMap/index.js)
 - [flatten](src/flatten/index.js)
 - [maybe](src/maybe/index.js)
 - [not](src/not/index.js)
